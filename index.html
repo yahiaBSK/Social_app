@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" type="text/css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!--   NAVBAR   -->
+  <div id="navbar"></div>
+  
+  <!--   CONTAINER   -->
+  <div class="container">
+    
+    <!--   CREATE POSTS   -->
+    <div class="create_post">
+      <h3>Publish a post ...</h3>
+      <a href="#"><button><i class="fa-duotone fa-pen-line"></i>Create</button></a>
+    </div>
+    
+    <!--   POSTS AREA   -->
+    <div class="posts_container">
+      <div class="post">
+        <div class="post_info">
+          <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+          <div class="right_info">
+            <a href="#"><p id="name">Yahia Boussouak</p></a>
+            <p><i class="fa-duotone fa-user-group"></i> Friends • <i class="fa-duotone fa-clock-three"></i> 4 weeks</p>
+          </div>
+        </div>
+        <div class="post_content">
+          <p>Hi everyone this is a experimental post ...
+          JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries.</p>
+        </div>
+        <div class="post_react">
+          <button id="like_btn"><i class="fa-solid fa-heart"></i><br>179</button>
+          <button id="comment_btn"><i class="fa-duotone fa-comment-lines"></i><br>23</button>
+          <button id="share_btn"><i class="fa-duotone fa-share-all"></i><br>12</button>
+          <button id="more_info_btn"><i class="fa-duotone fa-ellipsis-vertical"></i></button>
+        </div>
+      </div>
+      
+      <div class="post">
+        <div class="post_info">
+          <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+          <div class="right_info">
+            <a href="#"><p id="name" class="verified_account">Mohammed Ali</p></a>
+            <p><i class="fa-duotone fa-user-group"></i> Friends • <i class="fa-duotone fa-clock-three"></i> 5 days</p>
+          </div>
+        </div>
+        <div class="post_content">
+          <p>Be STRONG 🙏💪</p>
+          <div class="imgs">
+            <img id="post_content_img" src="https://i.postimg.cc/9XYb1wCX/ali-liston.jpg">
+          </div>
+        </div>
+        <div class="post_react">
+          <button id="like_btn"><i class="fa-solid fa-heart"></i><br>2688</button>
+          <button id="comment_btn"><i class="fa-duotone fa-comment-lines"></i><br>239</button>
+          <button id="share_btn"><i class="fa-duotone fa-share-all"></i><br>90</button>
+          <button id="more_info_btn"><i class="fa-duotone fa-ellipsis-vertical"></i></button>
+        </div>
+      </div>
+      
+      <div class="post">
+        <div class="post_info">
+          <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+          <div class="right_info">
+            <a href="#"><p id="name">Sami zakaria</p></a>
+            <p><i class="fa-duotone fa-user-group"></i> Friends • <i class="fa-duotone fa-clock-three"></i> 4 weeks</p>
+          </div>
+        </div>
+        <div class="post_content">
+          <p>Hi everyone this is a experimental post ...
+          </p>
+        </div>
+        <div class="post_react">
+          <button id="like_btn"><i class="fa-solid fa-heart"></i><br>78</button>
+          <button id="comment_btn"><i class="fa-duotone fa-comment-lines"></i><br>12</button>
+          <button id="share_btn"><i class="fa-duotone fa-share-all"></i><br></button>
+          <button id="more_info_btn"><i class="fa-duotone fa-ellipsis-vertical"></i></button>
+        </div>
+    </div>
+    </div>
+    
+    
+    <!--   COMMENTS AREA   -->
+
+    <div class="comments_container">
+      <button id="close_comments_btn"><i class="fa-solid fa-xmark"></i></button>
+      <div class="comments">
+        <div class="comment">
+          <div class="comment_info">
+            <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+            <div class="right_comment_info">
+              <p id="name">Yahia Boussouak</p>
+              <p><i class="fa-duotone fa-clock-three"></i> 2 hours</p>
+            </div>
+          </div>
+          <div class="comment_content">
+            <p>this is a experimental comment 👌</p>
+          </div>
+        </div>
+  
+        <div class="comment">
+          <div class="comment_info">
+            <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+            <div class="right_comment_info">
+              <p id="name">Yahia Boussouak</p>
+              <p><i class="fa-duotone fa-clock-three"></i> 2 hours</p>
+            </div>
+          </div>
+          <div class="comment_content">
+            <p>this is a experimental comment 👋</p>
+          </div>
+        </div>
+  
+        <div class="comment">
+          <div class="comment_info">
+            <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+            <div class="right_comment_info">
+              <p id="name">Yahia Boussouak</p>
+              <p><i class="fa-duotone fa-clock-three"></i> 2 hours</p>
+            </div>
+          </div>
+          <div class="comment_content">
+            <p>this is a experimental comment 💪</p>
+          </div>
+        </div>
+  
+        <div class="comment">
+          <div class="comment_info">
+            <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+            <div class="right_comment_info">
+              <p id="name">Yahia Boussouak</p>
+              <p><i class="fa-duotone fa-clock-three"></i> 2 hours</p>
+            </div>
+          </div>
+          <div class="comment_content">
+            <p>this is a experimental comment 👍</p>
+          </div>
+        </div>
+      </div>
+      <div class="input_comment_container">
+        <div class="input_comment">
+          <input type="text" placeholder="Create you comment">
+          <button type="button"><i class="fa-solid fa-comment-pen"></i> Publish</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+ 
+ 
+ </div>
+  
+  
+  
+  
+  
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $("#navbar").load("navbar/navbar.html");
+    });
+  </script>
+</body>
+</html>

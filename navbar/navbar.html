@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" type="text/css">
+  <link rel="stylesheet" href="navbar.css">
+  <title></title>
+  
+  
+  
+  <style>
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(27, 115, 232, 1);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  i{
+    font-size: 1.7rem;
+    transition: 0.2s ease;
+  }
+  a{
+    text-decoration: none;
+    outline: none;
+  }
+  .navbar button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    color: white;
+    padding: 8px;
+    border-radius: 22px;
+    transition: 0.2s ease;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+  .navbar button:hover{
+    background-color: rgba(255,255,255,0.20)
+  }
+  .navbar button:active{
+    background-color: white;
+    color: rgba(27, 115, 232, 1);
+    transform: scale(0.8)
+  }
+  .sidebar{
+    background-color: rgba(27, 115, 232, 1);
+    text-align: center;
+    display: block;
+    padding: 20px;
+    margin-top: -500px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease-in-out;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    
+  }
+  
+  .sidebar .sidebar_username{
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 15px;
+    border-radius: 0px;
+    background-color: rgba(255,255,255,0.15);
+    color: white;
+    display: flex;
+    align-content: center; 
+    justify-content: center;
+    margin: 15px -30px;
+  }
+  .sidebar .sidebar_username h1 {
+    font-weight: 700;
+    margin-left: 10px;
+  }
+  .sidebar_username img{
+    width: 65px;
+    height: 65px;
+    border-radius: 1017px;
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.15)
+  }
+  
+  .sidebar button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 15px auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    border-radius: 22px;
+    padding: 5px 5px 5px 5px;
+    transition: 0.2s ease;
+    width: 45%;
+    height: 50px;
+  }
+  .sidebar button i{
+    padding: 7px;
+    font-size: 1.5rem;
+    margin-left: -6.5px;
+  }
+  .sidebar button:hover{
+    background-color: rgba(255,255,255,0.20);
+  }
+  .sidebar button:focus{
+    background-color: white;
+    color: rgba(27, 115, 232, 1);
+    transform: scale(1.1);
+    box-shadow: 0 0 0 3px rgba(255,255,255,0.20);
+  }
+  
+
+
+  </style>
+  
+  
+  
+  
+</head>
+
+<body>
+  
+  <nav>
+    <div class="navbar">
+      <button id="navbar_menu_icon"><i class="fa-duotone fa-bars-sort"></i></button>
+      <h1>ChatApp</h1>
+      <button id="navbar_search_icon"><i class="fa-duotone fa-magnifying-glass"></i></button>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar_username">
+        <img src="https://i.postimg.cc/c44nDM34/IMG-20220506-175539.jpg" alt="">
+        <h1>Yahia Bsk</h1>
+      </div>
+      <div class="sidebar_ul">
+        <a href="#"><button><i class="fa-duotone fa-user-pen"></i>Account</button></a>
+        <a href="#"><button><i class="fa-duotone fa-objects-align-left"></i>Dashboard</button></a>
+        <a href="#"><button><i class="fa-duotone fa-envelopes-bulk"></i>Posts</button></a>
+        <a href="#"><button><i class="fa-duotone fa-circle-exclamation"></i>Report</button></a>
+        <a href="#"><button><i class="fa-duotone fa-right-from-bracket"></i>Logout</button></a>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+</body>
+<script>
+
+let sidebar = document.querySelector('.sidebar')
+let sidebarIcon = document.querySelector('#navbar_menu_icon i')
+let sidebarIconBtn = document.querySelector("#navbar_menu_icon")
+
+sidebarIconBtn.addEventListener('click', ()=>{
+  if(sidebar.style.marginTop !== '50px'){
+    sidebar.style.marginTop = '50px'
+    sidebarIcon.className = 'fa-regular fa-xmark'
+  }else{
+    sidebar.style.marginTop="-500px"
+    sidebarIcon.className = 'fa-duotone fa-bars-sort'
+  }
+})
+
+
+
+</script>
+</html>
