@@ -1,2 +1,2 @@
 # Social_app
-LIVE WEBSITE: https://beta-chat-app.netlify.app
+LIVE WEBSITE: https://bit.ly/3yzAZUb
